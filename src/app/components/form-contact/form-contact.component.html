@@ -1,0 +1,157 @@
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="content col-xl-5 d-flex flex-column justify-content-center">
+        <img
+          src="https://d9hhrg4mnvzow.cloudfront.net/www.gosunpro.com/lp/g/solar-panels/7bef027c-home-energy-house_10da0ab0c509h00q00f028.png"
+          class="img-fluid"
+          alt="Contact image"
+        />
+      </div>
+      <div class="col-xl-7">
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row">
+            <div class="mt-4 mt-lg-0">
+              <form
+                class="contact-form"
+                [formGroup]="contactForm"
+                (ngSubmit)="contactSubmit()"
+                role="form"
+              >
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    formControlName="firstName"
+                    [ngClass]="submitted && getError('firstName') && 'is-invalid' || !getError('firstName') && 'is-valid'"
+                    class="form-control"
+                    placeholder="First Name"
+                  />
+                  <div
+                    *ngIf="submitted && getError('firstName')"
+                    class="invalid-feedback"
+                  >
+                    <p *ngIf="getError('firstName').minlength">
+                      First name must be at least {{getError('firstName').minlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('firstName').maxlength">
+                      First name must be a maximum length {{getError('firstName').maxlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('firstName').required">
+                      Please enter your first name.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    [ngClass]="submitted && getError('lastName') && 'is-invalid' || !getError('lastName') && 'is-valid'"
+                    class="form-control"
+                    formControlName="lastName"
+                    placeholder="Last Name"
+                  />
+                  <div
+                    *ngIf="submitted && getError('lastName')"
+                    class="invalid-feedback"
+                  >
+                    <p *ngIf="getError('lastName').minlength">
+                      Last name must be at least {{getError('lastName').minlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('lastName').maxlength">
+                      Last name must be a maximum length {{getError('lastName').maxlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('lastName').required">
+                      Please enter your last name.
+                    </p>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="number"
+                    [ngClass]="submitted && getError('phoneNumber') && 'is-invalid' || !getError('phoneNumber') && 'is-valid'"
+                    class="form-control"
+                    formControlName="phoneNumber"
+                    placeholder="Phone Number"
+                  />
+                  <div
+                    *ngIf="submitted && getError('phoneNumber')"
+                    class="invalid-feedback"
+                  >
+                    <p *ngIf="getError('phoneNumber').minlength">
+                      Phone number must be at least {{getError('phoneNumber').minlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('phoneNumber').maxlength">
+                      Phone number must be a maximum length {{getError('phoneNumber').maxlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('phoneNumber').required">
+                      Please enter your phone number.
+                    </p>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="email"
+                    [ngClass]="submitted && getError('email') && 'is-invalid' || !getError('email') && 'is-valid'"
+                    class="form-control"
+                    formControlName="email"
+                    placeholder="Email"
+                  />
+                  <div
+                    *ngIf="submitted && getError('email')"
+                    class="invalid-feedback"
+                  >
+                    <p *ngIf="getError('email').email">
+                      Email is not valid.
+                    </p>
+                    <p *ngIf="getError('email').required">
+                      Please enter your email.
+                    </p>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="number"
+                    [ngClass]="submitted && getError('zipCode') && 'is-invalid' || !getError('zipCode') && 'is-valid'"
+                    class="form-control"
+                    formControlName="zipCode"
+                    placeholder="Zip Code"
+                  />
+                  <div
+                    *ngIf="submitted && getError('zipCode')"
+                    class="invalid-feedback"
+                  >
+                    <p *ngIf="getError('zipCode').minlength">
+                      Zip code must be at least {{getError('zipCode').minlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('zipCode').maxlength">
+                      Zip code must be a maximum length {{getError('zipCode').maxlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('zipCode').required">
+                      Please enter your zip code.
+                    </p>
+                  </div>
+                </div>
+                <div class="text-center mt-3">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End .content-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Services Section -->
