@@ -5,12 +5,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/shared/header/header.component';
 import { FormContactComponent } from './components/form-contact/form-contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { NoticesComponent } from './components/notices/notices.component';
+import { CompanyComponent } from './components/company/company.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     HomeComponent,
     ContactComponent,
     ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    NoticesComponent,
+    CompanyComponent,
   ],
   imports: [
     BrowserModule,
