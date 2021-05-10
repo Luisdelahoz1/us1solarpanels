@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 
 
-body {
+main {
   font-family: 'Poppins', sans-serif;
   color: #070606;
 }
@@ -2009,12 +2009,11 @@ a:hover {
 # About Section
 --------------------------------------------------------------*/
 .section-about .title-vertical {
-  position: absolute;
   letter-spacing: 0;
   transform: rotate(-90deg);
-  top: 50px;
+  top: 40px;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   width: 300px;
   font-weight: 700;
   text-align: right;
@@ -2038,11 +2037,8 @@ a:hover {
 }
 
 .sinse-box {
-  background-color: #fafafa77;
-  padding: 1rem 2rem;
   position: absolute;
-  left: 15px;
-  bottom: 10px;
+  background-color: #fafafa77;
 }
 
 @media (min-width: 576px) {
@@ -2060,7 +2056,7 @@ a:hover {
 
 @media (min-width: 992px) {
   .sinse-box {
-    padding: 2rem 5.5rem;
+    padding: 1rem 8.5rem;
   }
 }
 
