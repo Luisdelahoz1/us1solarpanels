@@ -14,6 +14,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NoticesComponent } from './components/notices/notices.component';
 import { CompanyComponent } from './components/company/company.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CarouselComponent } from './components/shared/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     NoticesComponent,
     CompanyComponent,
     PageNotFoundComponent,
+    CarouselComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -41,3 +44,4 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 
 })
 export class AppModule { }
+export * from './components/shared/carousel/carousel.component'
