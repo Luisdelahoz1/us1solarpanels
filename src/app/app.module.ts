@@ -15,6 +15,7 @@ import { NoticesComponent } from './components/notices/notices.component';
 import { CompanyComponent } from './components/company/company.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
+import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
     CompanyComponent,
     PageNotFoundComponent,
     CarouselComponent,
-    
+    MailchimpComponent,
   ],
   imports: [
     BrowserModule,
