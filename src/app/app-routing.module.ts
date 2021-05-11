@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CompanyComponent } from './components/company/company.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NoticesComponent } from './components/notices/notices.component';
 import { ProductsComponent } from './components/products/products.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
   },
   {
     path: '**',
