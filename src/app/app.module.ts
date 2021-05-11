@@ -14,6 +14,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NoticesComponent } from './components/notices/notices.component';
 import { CompanyComponent } from './components/company/company.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CarouselComponent } from './components/shared/carousel/carousel.component';
 import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.component';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.comp
     NoticesComponent,
     CompanyComponent,
     PageNotFoundComponent,
+    CarouselComponent,
     MailchimpComponent,
   ],
   imports: [
@@ -43,3 +45,4 @@ import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.comp
 
 })
 export class AppModule { }
+export * from './components/shared/carousel/carousel.component'
