@@ -14,6 +14,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NoticesComponent } from './components/notices/notices.component';
 import { CompanyComponent } from './components/company/company.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     NoticesComponent,
     CompanyComponent,
     PageNotFoundComponent,
+    MailchimpComponent,
   ],
   imports: [
     BrowserModule,
