@@ -1179,13 +1179,9 @@ a:hover {
   padding-top: 2rem;
 }
 
-.intro .carousel-item-a {
+.intro .carouse-item-a {
   position: relative;
   height: 100vh;
-}
-
-.intro .carousel-item-a.bg-image {
-  background-attachment: scroll;
 }
 
 .intro .intro-content {

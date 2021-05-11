@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NoticesComponent } from './components/notices/notices.component';
 import { CompanyComponent } from './components/company/company.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CompanyComponent } from './components/company/company.component';
     FooterComponent,
     NoticesComponent,
     CompanyComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,10 @@ import { CompanyComponent } from './components/company/company.component';
     ReactiveFormsModule,
     CommonModule
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
