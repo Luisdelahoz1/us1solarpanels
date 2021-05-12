@@ -27,6 +27,16 @@ main {
   color: #2eca6a;
   transition: all 400ms ease-in-out;
 }
+
+
+
+.images__fluid{
+  max-width: 300%;
+  border: 2px solid black;
+  background-size: 50% 50%;
+  align-items: center;
+}
+
 .btn-download:hover{
   transform: scale(1.1);
 }

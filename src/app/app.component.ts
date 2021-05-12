@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private location: Location) {}
 
   getLocation() : void {
-    const routes = ['', '/company', '/notices', '/products', '/contact'];
+    const routes = ['', '/company', '/notices', '/products', '/contact', '/blog'];
     this.notFound = routes.includes(this.location.path());
   }
 }
