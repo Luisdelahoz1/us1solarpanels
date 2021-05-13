@@ -162,7 +162,7 @@ main {
 
 .add-to-cart-btn:hover::after{
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  
+
 }
 
 .contenedor {
@@ -176,14 +176,14 @@ main {
 }
 
 .item{
-  height: 200px; 
+  height: 200px;
   width: 240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
   box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8),
   -8px -8px 16px rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -1308,14 +1308,12 @@ a:hover {
 }
 
 /*------/ Intro Single /------*/
-.intro-single {
-  padding: 12rem 0 3rem;
+body {
+  margin-top: 10em;
 }
 
-@media (max-width: 767px) {
-  .intro-single {
-    padding-top: 9rem;
-  }
+.intro-single {
+  padding: 2rem 0 0;
 }
 
 .intro-single .title-single-box {
