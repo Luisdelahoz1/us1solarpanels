@@ -11,7 +11,7 @@
 
 .info-box i {
   font-size: 32px;
-  color: #5a5af3;
+  color: #2eca6a;
   border-radius: 50%;
   padding: 8px;
 }
@@ -60,7 +60,7 @@
 .contact-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #2eca6a;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -80,7 +80,7 @@
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #2eca6a;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -96,7 +96,7 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #5a5af3;
+  border-color: #2eca6a;
 }
 
 .contact-form input {
@@ -108,7 +108,7 @@
 }
 
 .contact-form button[type='submit'] {
-  background: #5a5af3;
+  background: #12940658;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -117,7 +117,7 @@
 }
 
 .contact-form button[type='submit']:hover {
-  background: #7272f5;
+  background: #2eca6a;
 }
 
 @-webkit-keyframes animate-loading {
@@ -161,7 +161,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #434175;
+  color: #2eca6a;
 }
 
 .section-title h2::after {
@@ -170,7 +170,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #5a5af3;
+  background: #67f35a;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -181,7 +181,7 @@ section {
 
 .glass {
   background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(12, 179, 45, 0.911);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
