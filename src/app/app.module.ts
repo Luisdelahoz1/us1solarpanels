@@ -17,6 +17,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
 import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { EquipmentsComponent } from './components/equipments/equipments.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { BlogComponent } from './components/blog/blog.component';
     CarouselComponent,
     MailchimpComponent,
     BlogComponent,
+    EquipmentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,10 +43,10 @@ import { BlogComponent } from './components/blog/blog.component';
     CommonModule
   ],
   providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 
 })
 export class AppModule { }
-export * from './components/shared/carousel/carousel.component'
+export * from './components/shared/carousel/carousel.component';

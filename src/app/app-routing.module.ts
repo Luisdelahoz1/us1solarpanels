@@ -7,6 +7,7 @@ import { NoticesComponent } from './components/notices/notices.component';
 import { ProductsComponent } from './components/products/products.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { EquipmentsComponent } from './components/equipments/equipments.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'notices',
     component: NoticesComponent
+  },
+  {
+    path: 'equipments',
+    component: EquipmentsComponent
   },
   {
     path: 'products',
