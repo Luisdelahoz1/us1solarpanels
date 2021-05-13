@@ -10,10 +10,11 @@ import { FormspreeService } from '../../services/formspree/formspree.service';
 })
 export class FormContactComponent implements OnInit {
 
-  contactForm : FormGroup;
-  contactData : Formspree;
-  submitted   : boolean;
-  // private validEmailPattern = /^[A-Z|.|_|-]+[@]+[A-Z]+.com$/i;
+  contactForm   : FormGroup;
+  contactData   : Formspree;
+  initialValues : Formspree;
+  submitted     : boolean;
+  visibleAlert  : boolean;
 
   constructor(private formBuilder: FormBuilder, private formSpreeService: FormspreeService) { }
 
@@ -21,10 +22,12 @@ export class FormContactComponent implements OnInit {
     this.contactForm = this.formBuilder.group({
       firstName   : ['', [Validators.minLength(3), Validators.maxLength(50), Validators.required]],
       lastName    : ['', [Validators.minLength(3), Validators.maxLength(50), Validators.required]],
-      phoneNumber : ['', [Validators.minLength(10), Validators.maxLength(10), Validators.required]],
+      address     : ['', [Validators.minLength(5), Validators.maxLength(50), Validators.required]],
+      phoneNumber : ['', [Validators.minLength(7), Validators.maxLength(10), Validators.required]],
       email       : ['', [Validators.email, Validators.required]],
       zipCode     : ['', [Validators.minLength(5), Validators.maxLength(9), Validators.required]],
     });
+    this.initialValues = this.contactForm.value;
   }
 
   getError(field: string) {
@@ -35,7 +38,6 @@ export class FormContactComponent implements OnInit {
 
   contactSubmit() {
     this.submitted = true;
-    console.log(this.submitted);
 
     if (!this.contactForm.invalid) {
       this.contactData = this.contactForm.value;
@@ -43,10 +45,10 @@ export class FormContactComponent implements OnInit {
         'https://formspree.io/f/xleajbel',
         this.contactData
       ).subscribe(response => {
-        console.log(response);
-
         if (response) {
-          this.contactForm.reset();
+          this.contactForm.reset(this.initialValues);
+          this.submitted = false;
+          this.visibleAlert = true;
         }
       });
     }

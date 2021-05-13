@@ -21,7 +21,16 @@
         <div class="d-flex flex-column justify-content-center">
           <div class="row">
             <div class="mt-4 mt-lg-0">
+
+              <!-- ALERT SUCCESS FORM -->
+              <div *ngIf="visibleAlert" class="row d-flex justify-content-center">
+                <div class="alert alert-success col-6 text-center p-1" role="alert">
+                  <span class="fw-bold">Thanks for subscribing!</span><p>The form has been submitted successfully.</p>
+                </div>
+              </div>
+
               <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="contactSubmit()" role="form">
+                <!-- FIRST NAME -->
                 <div class="form-group mt-3">
                   <input type="text" formControlName="firstName"
                     [ngClass]="submitted && getError('firstName') && 'is-invalid' || !getError('firstName') && 'is-valid'"
@@ -39,6 +48,7 @@
                   </div>
                 </div>
 
+                <!-- LAST NAME -->
                 <div class="form-group mt-3">
                   <input type="text"
                     [ngClass]="submitted && getError('lastName') && 'is-invalid' || !getError('lastName') && 'is-valid'"
@@ -56,6 +66,25 @@
                   </div>
                 </div>
 
+                <!-- ADDRESS -->
+                <div class="form-group mt-3">
+                  <input type="text"
+                    [ngClass]="submitted && getError('address') && 'is-invalid' || !getError('address') && 'is-valid'"
+                    class="form-control" formControlName="address" placeholder="Address" />
+                  <div *ngIf="submitted && getError('address')" class="invalid-feedback">
+                    <p *ngIf="getError('address').minlength">
+                      Address must be at least {{getError('address').minlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('address').maxlength">
+                      Address must be a maximum length {{getError('address').maxlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('address').required">
+                      Please enter your address.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- PHONE NUMBER -->
                 <div class="form-group mt-3">
                   <input type="number"
                     [ngClass]="submitted && getError('phoneNumber') && 'is-invalid' || !getError('phoneNumber') && 'is-valid'"
@@ -74,6 +103,7 @@
                   </div>
                 </div>
 
+                <!-- EMAIL -->
                 <div class="form-group mt-3">
                   <input type="email"
                     [ngClass]="submitted && getError('email') && 'is-invalid' || !getError('email') && 'is-valid'"
@@ -88,6 +118,7 @@
                   </div>
                 </div>
 
+                <!-- ZIP CODE -->
                 <div class="form-group mt-3">
                   <input type="number"
                     [ngClass]="submitted && getError('zipCode') && 'is-invalid' || !getError('zipCode') && 'is-valid'"

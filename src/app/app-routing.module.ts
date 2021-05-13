@@ -39,7 +39,7 @@ const routes: Routes = [
     component: BlogComponent
   },
   {
-    path: 'kolo',
+    path: '**',
     component: PageNotFoundComponent
   }
 ];
