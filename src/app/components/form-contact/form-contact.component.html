@@ -15,32 +15,27 @@
       <div class="content col-xl-5 d-flex flex-column justify-content-center">
         <img
           src="https://d9hhrg4mnvzow.cloudfront.net/www.gosunpro.com/lp/g/solar-panels/7bef027c-home-energy-house_10da0ab0c509h00q00f028.png"
-          class="img-fluid"
-          alt="Contact image"
-        />
+          class="img-fluid" alt="Contact image" />
       </div>
       <div class="col-xl-7">
         <div class="d-flex flex-column justify-content-center">
           <div class="row">
             <div class="mt-4 mt-lg-0">
-              <form
-                class="contact-form"
-                [formGroup]="contactForm"
-                (ngSubmit)="contactSubmit()"
-                role="form"
-              >
+
+              <!-- ALERT SUCCESS FORM -->
+              <div *ngIf="visibleAlert" class="row d-flex justify-content-center">
+                <div class="alert alert-success col-6 text-center p-1" role="alert">
+                  <span class="fw-bold">Thanks for subscribing!</span><p>The form has been submitted successfully.</p>
+                </div>
+              </div>
+
+              <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="contactSubmit()" role="form">
+                <!-- FIRST NAME -->
                 <div class="form-group mt-3">
-                  <input
-                    type="text"
-                    formControlName="firstName"
+                  <input type="text" formControlName="firstName"
                     [ngClass]="submitted && getError('firstName') && 'is-invalid' || !getError('firstName') && 'is-valid'"
-                    class="form-control"
-                    placeholder="First Name"
-                  />
-                  <div
-                    *ngIf="submitted && getError('firstName')"
-                    class="invalid-feedback"
-                  >
+                    class="form-control" placeholder="First Name" />
+                  <div *ngIf="submitted && getError('firstName')" class="invalid-feedback">
                     <p *ngIf="getError('firstName').minlength">
                       First name must be at least {{getError('firstName').minlength.requiredLength}} characters.
                     </p>
@@ -53,18 +48,12 @@
                   </div>
                 </div>
 
+                <!-- LAST NAME -->
                 <div class="form-group mt-3">
-                  <input
-                    type="text"
+                  <input type="text"
                     [ngClass]="submitted && getError('lastName') && 'is-invalid' || !getError('lastName') && 'is-valid'"
-                    class="form-control"
-                    formControlName="lastName"
-                    placeholder="Last Name"
-                  />
-                  <div
-                    *ngIf="submitted && getError('lastName')"
-                    class="invalid-feedback"
-                  >
+                    class="form-control" formControlName="lastName" placeholder="Last Name" />
+                  <div *ngIf="submitted && getError('lastName')" class="invalid-feedback">
                     <p *ngIf="getError('lastName').minlength">
                       Last name must be at least {{getError('lastName').minlength.requiredLength}} characters.
                     </p>
@@ -76,41 +65,50 @@
                     </p>
                   </div>
                 </div>
+
+                <!-- ADDRESS -->
                 <div class="form-group mt-3">
-                  <input
-                    type="number"
+                  <input type="text"
+                    [ngClass]="submitted && getError('address') && 'is-invalid' || !getError('address') && 'is-valid'"
+                    class="form-control" formControlName="address" placeholder="Address" />
+                  <div *ngIf="submitted && getError('address')" class="invalid-feedback">
+                    <p *ngIf="getError('address').minlength">
+                      Address must be at least {{getError('address').minlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('address').maxlength">
+                      Address must be a maximum length {{getError('address').maxlength.requiredLength}} characters.
+                    </p>
+                    <p *ngIf="getError('address').required">
+                      Please enter your address.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- PHONE NUMBER -->
+                <div class="form-group mt-3">
+                  <input type="number"
                     [ngClass]="submitted && getError('phoneNumber') && 'is-invalid' || !getError('phoneNumber') && 'is-valid'"
-                    class="form-control"
-                    formControlName="phoneNumber"
-                    placeholder="Phone Number"
-                  />
-                  <div
-                    *ngIf="submitted && getError('phoneNumber')"
-                    class="invalid-feedback"
-                  >
+                    class="form-control" formControlName="phoneNumber" placeholder="Phone Number" />
+                  <div *ngIf="submitted && getError('phoneNumber')" class="invalid-feedback">
                     <p *ngIf="getError('phoneNumber').minlength">
                       Phone number must be at least {{getError('phoneNumber').minlength.requiredLength}} characters.
                     </p>
                     <p *ngIf="getError('phoneNumber').maxlength">
-                      Phone number must be a maximum length {{getError('phoneNumber').maxlength.requiredLength}} characters.
+                      Phone number must be a maximum length {{getError('phoneNumber').maxlength.requiredLength}}
+                      characters.
                     </p>
                     <p *ngIf="getError('phoneNumber').required">
                       Please enter your phone number.
                     </p>
                   </div>
                 </div>
+
+                <!-- EMAIL -->
                 <div class="form-group mt-3">
-                  <input
-                    type="email"
+                  <input type="email"
                     [ngClass]="submitted && getError('email') && 'is-invalid' || !getError('email') && 'is-valid'"
-                    class="form-control"
-                    formControlName="email"
-                    placeholder="Email"
-                  />
-                  <div
-                    *ngIf="submitted && getError('email')"
-                    class="invalid-feedback"
-                  >
+                    class="form-control" formControlName="email" placeholder="Email" />
+                  <div *ngIf="submitted && getError('email')" class="invalid-feedback">
                     <p *ngIf="getError('email').email">
                       Email is not valid.
                     </p>
@@ -119,18 +117,13 @@
                     </p>
                   </div>
                 </div>
+
+                <!-- ZIP CODE -->
                 <div class="form-group mt-3">
-                  <input
-                    type="number"
+                  <input type="number"
                     [ngClass]="submitted && getError('zipCode') && 'is-invalid' || !getError('zipCode') && 'is-valid'"
-                    class="form-control"
-                    formControlName="zipCode"
-                    placeholder="Zip Code"
-                  />
-                  <div
-                    *ngIf="submitted && getError('zipCode')"
-                    class="invalid-feedback"
-                  >
+                    class="form-control" formControlName="zipCode" placeholder="Zip Code" />
+                  <div *ngIf="submitted && getError('zipCode')" class="invalid-feedback">
                     <p *ngIf="getError('zipCode').minlength">
                       Zip code must be at least {{getError('zipCode').minlength.requiredLength}} characters.
                     </p>
@@ -142,6 +135,7 @@
                     </p>
                   </div>
                 </div>
+
                 <div class="text-center mt-3">
                   <button type="submit">Send Message</button>
                 </div>
