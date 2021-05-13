@@ -50,5 +50,7 @@ export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
         subtitle: 'It is a renewable energy source obtained from the sun and with which heat and electricity can be generated.',
         link: '/',
         image: 'assets/img/carousel5.jpg'
-    }
+    },
 ];
+
+
