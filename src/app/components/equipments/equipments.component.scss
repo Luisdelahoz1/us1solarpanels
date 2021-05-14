@@ -1,5 +1,6 @@
 * {
     text-align: center;
+  
 }
 
 
@@ -23,12 +24,15 @@
 }
 
 .about-section{
-    background: url(/assets/img/cost-of-solar-factors.jpg) no-repeat left;
     background-size: 45%;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
-}
+    align-items: center;
+    
+    
+   }
+
 
 .inner-container{
     width: 55%;
@@ -37,11 +41,6 @@
     padding: 150px;
 }
 
-.inner-container h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
 
 .text{
     font-size: 13px;
@@ -76,10 +75,11 @@
 
 @media screen and (max-width:600px){
     .about-section{
-        padding: 0;
+        padding: 100px;
+        padding-bottom: 100px;
     }
     .inner-container{
-        padding: 60px;
+        padding: 100px;
     }
 }
 
@@ -87,4 +87,5 @@
    color: black;
    font-size: 20px;
    font-family: 'Poppins', sans-serif;
+   
 }
