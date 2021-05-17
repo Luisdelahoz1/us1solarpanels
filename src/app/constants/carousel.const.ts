@@ -44,8 +44,8 @@ export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
     {
         id: 5,
         title: {
-            first: 'Solar energy makes your job easier',
-            second: 'Solar Panels'
+            first: 'Solar energy makes your ',
+            second: 'job easier'
         },
         subtitle: 'It is a renewable energy source obtained from the sun and with which heat and electricity can be generated.',
         link: '/',
