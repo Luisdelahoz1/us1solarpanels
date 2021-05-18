@@ -329,6 +329,9 @@ a:hover {
 .color-b {
   color: #FFD700;
 }
+.color-ba {
+  color: #2eca6a;
+}
 
 .color-d {
   color: #adadad;
@@ -515,6 +518,8 @@ a:hover {
 .title-a {
   font-size: 2.6rem;
   font-weight: 600;
+  
+
 }
 
 .title-link {
@@ -1209,12 +1214,28 @@ a:hover {
 }
 
 .intro .intro-body .price-a {
-  color: #ffffff;
-  padding: 1rem 1.5rem;
-  border: 2px solid #2eca6a;
-  border-radius: 50px;
-  text-transform: uppercase;
-  letter-spacing: 0.030em;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.823);
+  background-color: #3e8e41;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: -70px;
+
+}
+.intro .intro-body .price-a:hover {background-color: #2eca6a}
+
+.intro .intro-body .price-a:active {
+  background-color: #2eca6a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .intro .spacial {

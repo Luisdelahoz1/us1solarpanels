@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
 
   isShow : Boolean = false;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
