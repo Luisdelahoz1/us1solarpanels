@@ -11,8 +11,9 @@
 
 
 main {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #070606;
+  background-color: #FBFCFC;
 }
 
 .btn-download{
