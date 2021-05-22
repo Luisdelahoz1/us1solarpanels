@@ -1269,7 +1269,6 @@ a:hover {
 }
 
 .intro .intro-title {
-  transition-duration: 9s !important;
   color: #ffffff;
   font-weight: 700;
   font-size: 2.8rem;

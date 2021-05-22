@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI;EACX,IAAI,EAAE,iCAAiC;CACxC",
+    "sources": [
+        "mailchimp.component.scss"
+    ],
+    "names": [],
+    "file": "mailchimp.component.css"
+}
