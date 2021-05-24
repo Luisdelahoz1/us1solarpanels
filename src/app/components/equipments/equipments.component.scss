@@ -1,89 +1,21 @@
 *{
     overflow: hidden;
 }
+.price-t{
 
-.parrafo-color{
-    color: red;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+    display: inline-block;
+    padding: 17px 33px;
+    font-size: 32px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.823);
+    background-color: #3e8e41;
+    border: none;
+    border-radius: 62px;
+    box-shadow: 1 9px #999;
+    margin-top: 2px;
 }
 
-.colorous-text-a{
-    font-family: 'Poppins', sans-serif;
-}
-
-.btn-download{
-    margin: auto;
-}
-
-.carousel-caption{
-    color: white;
-    font-size: 25px;
-}
-
-.about-section{
-    background-size: 45%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
-    align-items: center;
-    
-    
-   }
-
-
-.inner-container{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 150px;
-}
-
-
-.text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
-
-.skills{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-}
-
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
-}
-
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 100px;
-        padding-bottom: 100px;
-    }
-    .inner-container{
-        padding: 100px;
-    }
-}
-
-
-.price-a{
-   color: black;
-   font-size: 20px;
-   font-family: 'Poppins', sans-serif;
-   
-}

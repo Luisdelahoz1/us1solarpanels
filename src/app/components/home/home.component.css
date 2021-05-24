@@ -1,4 +1,8 @@
-.main {
-  font-family: 'Roboto', sans-serif;
+* {
+  overflow: hidden;
 }
-/*# sourceMappingURL=home.component.css.map */
+
+.main {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=home.component.css.map */
+

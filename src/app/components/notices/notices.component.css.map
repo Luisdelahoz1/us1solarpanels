@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,QAAQ,EAAE,MAAM;CAEnB;;AAGD,AAAA,UAAU,CAAA;EACN,aAAa,EAAE,IAAI;CACtB",
-    "sources": [
-        "notices.component.scss"
-    ],
-    "names": [],
-    "file": "notices.component.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"notices.component.css"}

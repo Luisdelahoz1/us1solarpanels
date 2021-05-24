@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,QAAQ,EAAE,MAAM;CACnB",
-    "sources": [
-        "company.component.scss"
-    ],
-    "names": [],
-    "file": "company.component.css"
-}
+{"version":3,"sources":["company.component.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;AACJ","file":"company.component.css"}

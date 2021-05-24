@@ -182,13 +182,21 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   font-family: sans-serif;
   font-weight: bold;
   box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8),
   -8px -8px 16px rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
+
+@media screen and (min-width: 375px){
+  .contenedor{
+    padding: 0 -4rem;
+    left: -10em;
+  }
+}
+
 .item span:nth-child(1){
   font-size: 4.8rem;
   padding-bottom: 10px;
@@ -238,6 +246,10 @@ a {
 a:hover {
   color: #2eca6a;
   text-decoration: none;
+}
+
+p.content-c{
+  text-align: justify;
 }
 
 .link-two {
@@ -519,7 +531,7 @@ a:hover {
 .title-a {
   font-size: 2.6rem;
   font-weight: 600;
-  
+
 
 }
 
@@ -812,6 +824,7 @@ a:hover {
   color: #ffffff;
 }
 
+
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
@@ -851,6 +864,8 @@ a:hover {
     margin-left: 15px;
   }
 }
+
+
 
 .navbar-default.navbar-trans .nav-link, .navbar-default.navbar-reduce .nav-link {
   font-size: 1.1rem;
@@ -1217,8 +1232,8 @@ a:hover {
 .intro .intro-body .price-a {
   font-family: 'Poppins', sans-serif;
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 25px 45px;
+  font-size: 30px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -1226,10 +1241,34 @@ a:hover {
   color: rgba(255, 255, 255, 0.823);
   background-color: #3e8e41;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin-top: -70px;
+  border-radius: 25px;
+  box-shadow: 1 9px #999;
+  margin-top: -70px
 
+}
+
+@media screen and (min-width: 320px) {
+  .intro .intro-body .price-a{
+    display: inline-table;
+    border-radius: 20px;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .intro .intro-body .price-a{
+    display: inline-table;
+    border-radius: 20px;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .intro .intro-body .price-a{
+    display: inline-table;
+    border-radius: 20px;
+    font-size: large;
+  }
 }
 .intro .intro-body .price-a:hover {background-color: #2eca6a}
 
@@ -1253,6 +1292,13 @@ a:hover {
   color: #ffffff;
   letter-spacing: .05em;
 }
+@media (min-width: 320px) {
+  .intro .intro-title-top {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
 
 @media (min-width: 768px) {
   .intro .intro-title-top {
@@ -1273,11 +1319,23 @@ a:hover {
   font-weight: 700;
   font-size: 2.8rem;
   text-transform: uppercase;
+  margin-top: -72px;
 }
 
 @media (min-width: 576px) {
   .intro .intro-title {
     font-size: 3.5rem;
+  }
+}
+@media (min-width: 360px) {
+  .intro .intro-title {
+    margin-top: -40px;
+  }
+}
+
+@media (min-width: 375px) {
+  .intro .intro-title {
+    margin-top: -40px;
   }
 }
 
@@ -2049,21 +2107,17 @@ body {
   position: relative;
 }
 
-@media (min-width: 576px) {
-  .about-img-box {
-    padding-left: 4rem;
-  }
+.sinse-box {
+  position: sticky;
+  background-color: #fafafa77;
+
 }
+
 
 @media (min-width: 768px) {
   .about-img-box {
     padding-left: 5rem;
   }
-}
-
-.sinse-box {
-  position: absolute;
-  background-color: #fafafa77;
 }
 
 @media (min-width: 576px) {
@@ -2072,16 +2126,54 @@ body {
     bottom: 20px;
   }
 }
+@media (min-width: 360px) {
+  .sinse-box  {
+    padding: 0.5rem 7.5rem;
+    bottom: -50px;
+  }
+}
+
+@media (min-width: 320px) {
+  .sinse-box  {
+    padding: 0.5rem 7.5rem;
+    bottom: -70px;
+  }
+}
+
+
+@media (min-width: 375px) {
+  .sinse-box  {
+    padding: 0.5rem 7.5rem;
+    bottom: 150px;
+  }
+}
+
+@media (min-width: 411px) {
+  .sinse-box  {
+    padding: 0.5rem 7.5rem;
+    bottom: 150px;
+  }
+}
+
 
 @media (min-width: 768px) {
   .sinse-box {
     padding: 1.5rem 3rem;
+    bottom: 360px;
+    padding-left: 100px;
   }
 }
+
 
 @media (min-width: 992px) {
   .sinse-box {
     padding: 1rem 8.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sinse-box {
+    padding: 1rem 8.5rem;
+    bottom: 635px;
   }
 }
 
@@ -2089,6 +2181,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.043em;
   font-size: 1rem;
+  margin-top: 20px;
 }
 
 @media (min-width: 576px) {
@@ -2103,11 +2196,15 @@ body {
   }
 }
 
+
 @media (min-width: 992px) {
   .sinse-box .sinse-title {
     font-size: 2.2rem;
   }
 }
+
+
+
 
 .sinse-box .sinse-title span {
   position: absolute;

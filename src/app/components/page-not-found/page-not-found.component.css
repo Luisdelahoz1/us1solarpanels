@@ -5,67 +5,48 @@ FULL SCREEN MODE: http://salehriaz.com/404Page/404.html
 DRIBBBLE: https://dribbble.com/shots/4330167-404-Page-Lost-In-Space
 */
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500");
-
 @-webkit-keyframes rocket-movement {
   100% {
     -webkit-transform: translate(1200px, -600px);
   }
 }
-
 @keyframes rocket-movement {
   100% {
-    -webkit-transform: translate(1200px, -600px);
-            transform: translate(1200px, -600px);
+    transform: translate(1200px, -600px);
   }
 }
-
 @-webkit-keyframes spin-earth {
   100% {
     -webkit-transform: rotate(-360deg);
-    -webkit-transition: -webkit-transform 20s;
-    transition: -webkit-transform 20s;
     transition: transform 20s;
-    transition: transform 20s, -webkit-transform 20s;
   }
 }
-
 @keyframes spin-earth {
   100% {
-    -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
-    -webkit-transition: -webkit-transform 20s;
-    transition: -webkit-transform 20s;
     transition: transform 20s;
-    transition: transform 20s, -webkit-transform 20s;
   }
 }
-
 @-webkit-keyframes move-astronaut {
   100% {
     -webkit-transform: translate(-160px, -160px);
   }
 }
-
 @keyframes move-astronaut {
   100% {
-    -webkit-transform: translate(-160px, -160px);
     transform: translate(-160px, -160px);
   }
 }
-
 @-webkit-keyframes rotate-astronaut {
   100% {
     -webkit-transform: rotate(-720deg);
   }
 }
-
 @keyframes rotate-astronaut {
   100% {
-    -webkit-transform: rotate(-720deg);
     transform: rotate(-720deg);
   }
 }
-
 @-webkit-keyframes glow-star {
   40% {
     -webkit-opacity: 0.3;
@@ -75,7 +56,6 @@ DRIBBBLE: https://dribbble.com/shots/4330167-404-Page-Lost-In-Space
     -webkit-transform: scale(1.2);
   }
 }
-
 @keyframes glow-star {
   40% {
     -webkit-opacity: 0.3;
@@ -84,24 +64,20 @@ DRIBBBLE: https://dribbble.com/shots/4330167-404-Page-Lost-In-Space
   90%, 100% {
     -webkit-opacity: 1;
     opacity: 1;
-    -webkit-transform: scale(1.2);
     transform: scale(1.2);
     border-radius: 999999px;
   }
 }
-
 .spin-earth-on-hover {
-  -webkit-transition: ease 200s !important;
   transition: ease 200s !important;
-  -webkit-transform: rotate(-3600deg) !important;
-          transform: rotate(-3600deg) !important;
+  transform: rotate(-3600deg) !important;
 }
 
 html, body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 300;
   -webkit-user-select: none;
   /* Safari 3.1+ */
@@ -145,12 +121,8 @@ ul {
   margin: 0;
   padding: 0;
   /*    overflow: hidden;*/
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 li {
@@ -165,7 +137,6 @@ li a {
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 12px;
-  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
@@ -183,10 +154,8 @@ li a:hover {
 .btn-request:hover {
   background-color: #f0f0f0;
   color: #fff;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .btn-go-home {
@@ -204,17 +173,14 @@ li a:hover {
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 11px;
-  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 .btn-go-home:hover {
   background-color: #06e937;
   color: #fff;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .central-body {
@@ -231,8 +197,7 @@ li a:hover {
 .object_rocket {
   z-index: 95;
   position: absolute;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  transform: translateX(-50px);
   top: 75%;
   pointer-events: none;
   -webkit-animation: rocket-movement 200s linear infinite both running;
@@ -252,9 +217,9 @@ li a:hover {
   top: 12%;
   left: 25%;
   /*
-    transform: rotate(0deg);
-    transition: transform ease-in 99999999999s;
-*/
+      transform: rotate(0deg);
+      transition: transform ease-in 99999999999s;
+  */
 }
 
 .object_astronaut {
@@ -334,17 +299,20 @@ li a:hover {
   .navbar-links {
     display: none;
   }
+
   .custom-navbar {
     text-align: center;
   }
+
   .brand-logo img {
     width: 120px;
   }
+
   .box_astronaut {
     top: 70%;
   }
+
   .central-body {
     padding-top: 25%;
   }
-}
-/*# sourceMappingURL=page-not-found.component.css.map */
+}/*# sourceMappingURL=page-not-found.component.css.map */

@@ -2,14 +2,13 @@
 # Contact
 --------------------------------------------------------------*/
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .info-box {
   color: #444444;
   text-align: center;
-  -webkit-box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-          box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
   background: #fff;
 }
@@ -37,8 +36,7 @@
 
 .contact-form {
   background: #fff;
-  -webkit-box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-          box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
 }
 
@@ -80,7 +78,7 @@
 }
 
 .contact-form .loading:before {
-  content: '';
+  content: "";
   display: inline-block;
   border-radius: 50%;
   width: 24px;
@@ -95,8 +93,7 @@
 .contact-form input,
 .contact-form textarea {
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-size: 14px;
   border-radius: 5px;
 }
@@ -114,42 +111,35 @@
   padding: 12px 15px;
 }
 
-.contact-form button[type='submit'] {
+.contact-form button[type=submit] {
   background: #12940658;
   border: 0;
   padding: 10px 24px;
   color: #fff;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50px;
 }
 
-.contact-form button[type='submit']:hover {
+.contact-form button[type=submit]:hover {
   background: #2eca6a;
 }
 
 @-webkit-keyframes animate-loading {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 @keyframes animate-loading {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -177,7 +167,7 @@ section {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 50px;
@@ -193,11 +183,9 @@ section {
 
 .glass {
   background: rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(12, 179, 45, 0.911);
-          box-shadow: 0 8px 32px 0 rgba(12, 179, 45, 0.911);
+  box-shadow: 0 8px 32px 0 rgba(12, 179, 45, 0.911);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-}
-/*# sourceMappingURL=form-contact.component.css.map */
+}/*# sourceMappingURL=form-contact.component.css.map */
