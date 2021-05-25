@@ -1826,6 +1826,7 @@ body {
   line-height: 1.6;
   color: #000000;
   font-weight: 400;
+  text-align: justify;
 }
 
 .post-content p {
@@ -2129,7 +2130,7 @@ body {
 @media (min-width: 360px) {
   .sinse-box  {
     padding: 0.5rem 7.5rem;
-    bottom: -50px;
+    bottom: -30px;
   }
 }
 
@@ -2184,6 +2185,7 @@ body {
   margin-top: 20px;
 }
 
+
 @media (min-width: 576px) {
   .sinse-box .sinse-title {
     font-size: 1.3rem;
@@ -2223,6 +2225,14 @@ body {
   margin-bottom: 0;
   font-size: .7rem;
 }
+
+@media (min-width: 576px) {
+  .sinse-box p {
+    font-size: .8rem;
+  }
+}
+
+
 
 @media (min-width: 576px) {
   .sinse-box p {
