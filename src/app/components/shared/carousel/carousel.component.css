@@ -1,3 +1,4 @@
+
 .dsc-carousel {
   width: 100%;
   display: flex;
@@ -85,4 +86,24 @@
 .dsc-carousel__steps-step:hover, .dsc-carousel__steps-step-active {
   opacity: 0.7;
   background: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .dsc-carousel__content-item p {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .dsc-carousel__content-item p {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=carousel.component.css.map */
