@@ -19,7 +19,8 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
 import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { EquipmentsComponent } from './components/equipments/equipments.component';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,18 +37,22 @@ import { EquipmentsComponent } from './components/equipments/equipments.componen
     MailchimpComponent,
     BlogComponent,
     EquipmentsComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ]
 
 })
 export class AppModule { }
