@@ -19,7 +19,6 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
 import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { EquipmentsComponent } from './components/equipments/equipments.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
@@ -46,7 +45,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     ReactiveFormsModule,
     CommonModule,
-    FlexLayoutModule,
     BrowserAnimationsModule
   ],
   providers: [

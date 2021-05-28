@@ -18,6 +18,22 @@
   color: #303030;
 }
 
+.text-info{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+}
+
+.title-box-d{
+  align-self: center;
+}
+
+.title-d{
+  padding-top: 50px;
+  color: #303030;
+}
+
 .list{
  align-self: center;
  list-style-type: none;
@@ -41,33 +57,4 @@
 
 .list-item{
   margin-top: 15px;
-}
-
-@media screen and (max-width: 400px) {
-  .title-d{
-    padding-right:15%;
-    padding-left:15%;
-  }
-  .text-info {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 2vh;
-    text-align: center;
-
-  }
-  .sub-subtittle{
-    font-size: 2vh;
-  }
-  .list-container{
-    font-size: 2vw;
-  }
-}
-
-
-@media screen and (max-width: 700px) {
-  .text-info {
-
-  }
 }

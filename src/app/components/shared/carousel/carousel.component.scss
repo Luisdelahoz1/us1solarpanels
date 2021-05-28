@@ -88,9 +88,13 @@
   background: #fff;
 }
 
+
 @media screen and (max-width: 700px) {
   .dsc-carousel__content-item p {
-    font-size: 10px;
+    font-size: 0.6rem;
+    padding: 5px 5px 5px 5px;
+    text-align:center;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -99,8 +103,7 @@
 }
 @media screen and (max-width: 400px) {
   .dsc-carousel__content-item p {
-    font-size: 20px;
-    width: 200px;
+    font-size: 0.9rem;
   }
 
   h1 {
