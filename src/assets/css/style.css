@@ -1937,13 +1937,13 @@ body {
 }
 
 .card-box-ico {
-  padding:1rem 1rem 1rem 0.5rem;
+  padding: 1rem 1rem 1rem 0.5rem;
   border: 1px solid #2eca6a;
   border-radius: 20px;
 }
 
 .card-box-ico span {
-  font-size: 4rem;
+  font-size: 2.3rem;
   color: #000000;
 }
 
@@ -2179,8 +2179,11 @@ body {
 .sinse-box .sinse-title {
   font-weight: 700;
   letter-spacing: 0.043em;
+  font-size: 5rem;
+  margin-top: 20px;
   font-size: 1.7rem;
   margin-top: 30px;
+
 }
 
 
