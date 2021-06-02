@@ -32,7 +32,6 @@
               "src/assets/type/typings.d.ts"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/vendor/ionicons/css/ionicons.min.css",
@@ -109,7 +108,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modes/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
