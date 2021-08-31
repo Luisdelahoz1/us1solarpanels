@@ -20,6 +20,7 @@ import { MailchimpComponent } from './components/shared/mailchimp/mailchimp.comp
 import { BlogComponent } from './components/blog/blog.component';
 import { EquipmentsComponent } from './components/equipments/equipments.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalComponent } from './components/shared/cards/modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MailchimpComponent,
     BlogComponent,
     EquipmentsComponent,
+    ModalComponent,
 
 
   ],
